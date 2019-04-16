@@ -4,7 +4,6 @@
 
 A simple and reusable Pagination component for React
 ![Sample Pagination](https://raw.githubusercontent.com/sheetalkumar105/react-pure-pagination/master/screen.png)
-![](https://cloud.githubusercontent.com/assets/1412392/5339491/c40de124-7ee1-11e4-9f07-9276e2545f27.png)
 
 ## Installation
 
