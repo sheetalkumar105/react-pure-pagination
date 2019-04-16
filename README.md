@@ -35,9 +35,9 @@ class Example extends React.Component {
     this.handlePaginate = this.handlePaginate.bind(this);
   }
 
-  handlePaginate(date) {
+  handlePaginate(page) {
     this.setState({
-      startDate: date
+      currentPage: page
     });
   }
 
