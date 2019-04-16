@@ -4,6 +4,10 @@
     "description": "React Pagination component without any dependance.",
     "main": "./lib/Paginate.js",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sheetalkumar105/react-pure-pagination"
+    },
     "keywords": [
         "react",
         "paginate",
