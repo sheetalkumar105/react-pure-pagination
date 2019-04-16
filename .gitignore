@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Tools
+.idea
+.directory
+.project
+.settings
+.tmproj
+.vscode
+*.code-workspace
+*.esproj
+*.sublime-project
+*.sublime-workspace
+
+# Built
+.next
+.cache
+*.log
+bundles
+node_modules
+static/styles/app.css
+
+# Secrets
+.env
+.env.test
+.env.dev

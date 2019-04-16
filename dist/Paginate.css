@@ -1,0 +1,49 @@
+.paginate {
+    padding: 10px 40px;
+    display: table;
+    width: 100%;
+}
+.paginate .paginate-summary {
+    width: auto;
+    float: left;
+    padding: 5px;
+    font-size: 14px;
+}
+.paginate .paginate-summary span {
+    margin-left: 50px;
+}
+.paginate .paginate-action {
+    width: auto;
+    float: right;
+}
+.paginate .paginate-action .paginate-pagination {
+    display: block;
+}
+.paginate .paginate-action .paginate-pagination li {
+    background: #fff;
+    padding: 7px 13px;
+    font-size: 14px;
+    border: 1px solid #e9ecef;
+    border-right: 0;
+    display: inline-block;
+}
+.paginate .paginate-action .paginate-pagination li:last-child {
+    border-right: 1px solid #eee;
+}
+.paginate .paginate-action .paginate-pagination li.active {
+    cursor: pointer;
+}
+.paginate .paginate-action .paginate-pagination li.active:hover {
+    background: #e9ecef;
+}
+.paginate .paginate-action .paginate-pagination li.inactive {
+    cursor: default;
+    background: #ced4da;
+}
+.paginate .paginate-action .paginate-pagination li.inactive:hover {
+    background: #ddd;
+}
+.paginate .paginate-action .paginate-pagination li.inactive.cpageval {
+    background: #777;
+    color: #fff;
+}
