@@ -41,7 +41,7 @@
     background: #e9ecef;
 }
 .paginate .paginate-action .paginate-pagination li.inactive:hover {
-    background: #ddd;
+    background: #e9ecef;
 }
 .paginate .paginate-action .paginate-pagination li.inactive.cpageval {
     background: #777;
