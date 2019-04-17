@@ -1,6 +1,6 @@
 {
     "name": "react-pure-pagination",
-    "version": "1.0.7",
+    "version": "1.0.9",
     "description": "React Pagination component without any dependance.",
     "main": "./lib/Paginate.js",
     "license": "MIT",

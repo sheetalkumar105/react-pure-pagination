@@ -8,12 +8,17 @@ const propTypes = {
     perPage: PropTypes.number.isRequired,
     current: PropTypes.number.isRequired,
     showFirstButton: PropTypes.bool,
-    showLastButton: PropTypes.bool
+    showLastButton: PropTypes.bool,
+    styles: PropTypes.object
 }
 
 const defaultProps = {
     showFirstButton: true,
-    showLastButton: true
+    showLastButton: true,
+    styles: {
+        currentPage: {
+        }
+    }
 }
 
 class Paginate extends React.Component {
@@ -70,7 +75,7 @@ class Paginate extends React.Component {
                                 {btn.map((x, n) => {
                                     let i = start_loop + n;
                                     if ((current == i))
-                                        return (<li className="inactive cpageval" key={n}><span>{i}</span></li>)
+                                        return (<li className="inactive cpageval" style={styles.currentPage} key={n}><span>{i}</span></li>)
                                     else
                                         return (<li onClick={() => this.handleChange(i)} className="active" key={n}><span>{i}</span></li>)
                                 })}
