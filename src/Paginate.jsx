@@ -7,8 +7,8 @@ const propTypes = {
     onChange: PropTypes.func.isRequired,
     perPage: PropTypes.number.isRequired,
     current: PropTypes.number.isRequired,
-    showFirstButton: PropTypes.boolean,
-    showLastButton: PropTypes.boolean
+    showFirstButton: PropTypes.bool,
+    showLastButton: PropTypes.bool
 }
 
 const defaultProps = {
@@ -66,16 +66,16 @@ class Paginate extends React.Component {
                         <div className="paginate-action">
                             <ul className="paginate-pagination">
                                 {(first_btn && current > 1) ? <li onClick={() => this.handleChange(1)} className="active"><span>First</span></li> : (first_btn) ? <li className="inactive"><span>First</span></li> : ''}
-                                {(previous_btn && current > 1) ? <li onClick={() => this.handleChange(current - 1)} class="active"><span>Prev</span></li> : (first_btn) ? <li className="inactive"><span>Prev</span></li> : ''}
+                                {(previous_btn && current > 1) ? <li onClick={() => this.handleChange(current - 1)} className="active"><span>Prev</span></li> : (first_btn) ? <li className="inactive"><span>Prev</span></li> : ''}
                                 {btn.map((x, n) => {
                                     let i = start_loop + n;
                                     if ((current == i))
                                         return (<li className="inactive cpageval" key={n}><span>{i}</span></li>)
                                     else
-                                        return (<li onClick={() => handleChange(i)} className="active" key={n}><span>{i}</span></li>)
+                                        return (<li onClick={() => this.handleChange(i)} className="active" key={n}><span>{i}</span></li>)
                                 })}
                                 {(next_btn && current < no_of_paginations) ? <li onClick={() => this.handleChange(current + 1)} className="active"><span>Next</span></li> : (next_btn) ? <li className="inactive"><span>Next</span></li> : ''}
-                                {(last_btn && current < no_of_paginations) ? <li onClick={() => this.handleChange(no_of_paginations)} className="active"><span>Last</span></li> : (last_btn) ? <li class="inactive"><span>Last</span></li> : ''}
+                                {(last_btn && current < no_of_paginations) ? <li onClick={() => this.handleChange(no_of_paginations)} className="active"><span>Last</span></li> : (last_btn) ? <li className="inactive"><span>Last</span></li> : ''}
                             </ul>
                         </div>
                     </div>
