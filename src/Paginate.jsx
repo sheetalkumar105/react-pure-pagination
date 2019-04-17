@@ -33,7 +33,7 @@ class Paginate extends React.Component {
     }
 
     render() {
-        const { total, perPage, current, showFirstButton, showLastButton } = this.props
+        const { total, perPage, current, showFirstButton, showLastButton, styles } = this.props
         const previous_btn = true,
             next_btn = true,
             first_btn = showFirstButton ? showFirstButton : true,
