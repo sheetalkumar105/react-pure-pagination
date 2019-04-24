@@ -47,3 +47,30 @@
     background: #777;
     color: #fff;
 }
+@media (max-width: 768px) {
+    .paginate {
+        padding: 10px 10px;
+   }
+    .paginate .paginate-summary {
+        width: 100%;
+        float: left;
+        padding: 5px;
+        font-size: 14px;
+   }
+    .paginate .paginate-summary span {
+        margin-left: 0px;
+        float: right;
+   }
+    .paginate .paginate-action {
+        width: 100%;
+        margin-top: 10px;
+   }
+    .paginate .paginate-action .paginate-pagination {
+        margin: 0;
+        padding: 0;
+        float: right;
+   }
+    .paginate .paginate-action .paginate-pagination li {
+        padding: 7px 10px;
+   }
+}

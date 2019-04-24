@@ -26,6 +26,12 @@ import "react-pure-pagination/dist/Paginate.css";
 // In scss you can use
 // @import 'react-pure-pagination/dist/Paginate.scss';
 
+const paginationStyle = {
+  currentPage: {
+    background: '#4925bd'
+  }
+}
+
 class Example extends React.Component {
   constructor(props) {
     super(props);
@@ -43,7 +49,7 @@ class Example extends React.Component {
 
   render() {
     return (
-      <Paginate total={50} perPage={10} current={this.state.currentPage} onChange={this.handlePaginate} />
+      <Paginate total={50} perPage={10} current={this.state.currentPage} onChange={this.handlePaginate} styles={paginationStyle} />
     );
   }
 }
