@@ -83,3 +83,6 @@ You can set `showFirstButton` and `showLastButton` props as false to hide first 
 
 Developed under Impulsive Web Pvt Ltd.
 [Impulsive Web Pvt Ltd](https://impulsiveweb.com/)
+
+For further details visit Javascript at DevStudioOnline.
+[Javascript at DevStudioOnline](https://devstudioonline.com/articles/javascript)
